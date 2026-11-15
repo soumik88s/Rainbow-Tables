@@ -1,0 +1,45 @@
+# Introduction to Rainbow Tables
+
+## 1. What are Rainbow Tables?
+
+Rainbow Tables are precomputed lookup tables used in cryptography to help recover plaintext passwords from their corresponding hash values.
+
+They use a technique called time-memory trade-off to reduce the computational work needed compared with trying every possible password individually.
+
+## 2. Why are Rainbow Tables Used?
+
+Rainbow tables are primarily associated with password security analysis.
+
+They demonstrate why storing passwords using fast, unsalted hash functions can be dangerous.
+
+## 3. How Do They Work?
+
+The general process involves:
+
+1. Generating possible passwords.
+2. Applying a hash function.
+3. Applying a reduction function.
+4. Creating chains of hash and reduction operations.
+5. Storing selected chain endpoints.
+6. Searching the resulting table for a matching hash.
+
+## 4. Important Concepts
+
+- Hash Functions
+- Reduction Functions
+- Hash Chains
+- Precomputation
+- Time-Memory Trade-off
+- Password Recovery
+
+## 5. Security Importance
+
+Modern password storage systems use unique salts and intentionally expensive password-hashing algorithms such as Argon2id, bcrypt, and scrypt.
+
+These techniques make traditional rainbow table attacks significantly less practical.
+
+## 6. Conclusion
+
+Understanding rainbow tables helps cybersecurity students understand password vulnerabilities and the importance of secure password storage.
+
+**Purpose:** Educational cybersecurity documentation and authorized security research.
